@@ -5,5 +5,17 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	
+   var importe;
+   var aumento;
+   var importeFinal;
+
+   importe = document.getElementById("sueldo").value;
+   importe = parsefloat(importe);
+
+   aumento = importe * 10 / 100;
+   importeFinal = importe + aumento;
+
+   document.getElementById("resultado").value=importeFinal;
+
+
 }
